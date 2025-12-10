@@ -11,16 +11,13 @@ variable "subscription_id" {
     type = string
     default = "4dbffbb6-92ea-4699-bba4-5c52b58301ff" #TO BE FILLED
 }
-# Define a variable for the resource group name associated with your personal
-sandbox.
+# Define a variable for the resource group name associated with your personal sandbox.
 # A resource group is a container that holds related Azure resources.
 variable "rg_name" {
     type = string
     default = "sandbox_centralesupelec.team6" #TO BE FILLED
 }
 # Define a variable for the Azure region (location) where resources will be deployed.
-Internal distribution
-6_2025 – Deployment Guide Portal – EN2025 - CSE Guide - CentraleSupelec.docx 2025 | © Wavestone | 27
 variable "location" {
     type = string
     default = "France Central"

@@ -8,8 +8,7 @@ provider "azurerm" {
 
 # Create Storage Account
 resource "azurerm_storage_account" "sg1" {
-    name = "team6lesbossdelavielogo" #add your name to make it unique. Can only consist of
-    lowercase letters and numbers, and must be between 3 and 24 characters long.
+    name = "team6lesbossdelavielogo" #add your name to make it unique. Can only consist of lowercase letters and numbers, and must be between 3 and 24 characters long.
     resource_group_name = var.rg_name
     location = var.location
     # Performance tier: Standard (HDD-backed)
@@ -23,8 +22,6 @@ resource "azurerm_storage_account" "sg1" {
 # Create a Blob inside the Storage Account
 resource "azurerm_storage_container" "newcontainer1" {
     name = "container-logo"
-    Internal distribution
-    6_2025 – Deployment Guide Portal – EN2025 - CSE Guide - CentraleSupelec.docx 2025 | © Wavestone | 29
     storage_account_id = azurerm_storage_account.sg1.id
     # Access level: "blob" = anonymous read access to blobs only
     container_access_type = "blob"
@@ -32,8 +29,7 @@ resource "azurerm_storage_container" "newcontainer1" {
 
 # Create Storage Account
 resource "azurerm_storage_account" "sg2" {
-    name = "team6lesbossdelavie" #add your team name to make it unique. Can only consist of
-    lowercase letters and numbers, and must be between 3 and 24 characters long.
+    name = "team6lesbossdelavie" #add your team name to make it unique. Can only consist of lowercase letters and numbers, and must be between 3 and 24 characters long.
     resource_group_name = var.rg_name
     location = var.location
     # Performance tier: Standard (HDD-backed)
@@ -43,8 +39,7 @@ resource "azurerm_storage_account" "sg2" {
     account_replication_type = "LRS"
     # Allows public access to blobs/containers
     allow_nested_items_to_be_public = true
-    Internal distribution
-    6_2025 – Deployment Guide Portal – EN2025 - CSE Guide - CentraleSupelec.docx 2025 | © Wavestone | 30
+    
 }
 # Create a Blob inside the Storage Account
 resource "azurerm_storage_container" "newcontainer2" {
@@ -57,8 +52,7 @@ resource "azurerm_storage_container" "newcontainer2" {
 
 # Create MySQL Server
 resource "azurerm_mysql_flexible_server" "serverformation1" {
-    name = "serveriac" #add your team name to make it unique. Can only consist of
-    lowercase letters and numbers, and must be between 3 and 24 characters long.
+    name = "serveriac" #add your team name to make it unique. Can only consist of lowercase letters and numbers, and must be between 3 and 24 characters long.
     location = var.location
     resource_group_name = var.rg_name
     administrator_login = "adminleboss"
